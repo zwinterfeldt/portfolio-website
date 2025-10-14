@@ -1,4 +1,4 @@
-import React from 'react';
+// import React is not needed for JSX in React 17+
 
 const Updates: React.FC = () => {
   return (
