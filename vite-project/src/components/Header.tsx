@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const tabs = [
-    { label: 'Home', href: '#' },
-    { label: 'Portfolio', href: '#' },
-    { label: 'Updates', href: '#' },
-    { label: 'Contact', href: '#' },
+    { label: 'Home', path: '/' },
+    { label: 'Portfolio', path: '/portfolio' },
+    { label: 'Updates', path: '/updates' },
+    { label: 'Contact', path: '/contact' },
 ];
 
 const Header: React.FC = () => (
@@ -13,8 +14,8 @@ const Header: React.FC = () => (
             <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
                 {tabs.map(tab => (
                     <li key={tab.label} style={{ marginRight: '2rem' }}>
-                        <a
-                            href={tab.href}
+                        <Link
+                            to={tab.path}
                             style={{
                                 color: '#fff',
                                 textDecoration: 'none',
@@ -23,7 +24,7 @@ const Header: React.FC = () => (
                             }}
                         >
                             {tab.label}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

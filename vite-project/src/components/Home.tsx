@@ -1,13 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero-section" style={{ 
         textAlign: 'center', 
         padding: '4rem 2rem', 
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/mpls_skyline.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 15%',
+        backgroundRepeat: 'no-repeat',
         color: 'white',
         marginBottom: '3rem'
       }}>
@@ -15,13 +21,13 @@ const Home: React.FC = () => {
           Welcome to My Wesbite!
         </h1>
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-          I am a passionate software engineer inspired by innovation and creativity.
+          I am a passionate software engineer inspired by innovation and creativity based out of Minneapolis, Minnesota.
           I love to connect and collaborate with others to help bring ideas to life!
         </p>
         <button 
           className="btn btn-primary btn-lg"
           style={{ padding: '12px 30px', fontSize: '1.1rem' }}
-          onClick={() => console.log('View Portfolio clicked')}
+          onClick={() => navigate('/portfolio')}
         >
           View My Work
         </button>
@@ -35,18 +41,26 @@ const Home: React.FC = () => {
               <h2 style={{ marginBottom: '1.5rem', color: '#333' }}>About Me</h2>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666' }}>
                 I'm a dedicated developer with a passion for creating innovative solutions. 
-                With expertise in modern web technologies, I love turning ideas into reality 
-                through clean, efficient code.
+                I love solving all kinds of problems and making my life and others' easier through code!
+                I'm very interested in machine learning, deep learning, automation, and full stack development.
               </p>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#666' }}>
+                I hold a Bachelor's in Science in Computer Science from Minnesota State University, Mankato where I minored in Mathematics.
+                Although I'm just getting started in my career, I've had the opportunity to work on numerous industry projects and internships that gave me a wealth of experience.
+                </p>
+              
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '0.5rem' }}>
-                  <strong>🚀 Frontend:</strong> React, TypeScript, HTML5, CSS3
+                  <strong>🌐 Languages:</strong> Python, Java, TypeScript, HTML/CSS, SQL (Postgres), HTML/CSS, MongoDB Query Language
                 </li>
                 <li style={{ marginBottom: '0.5rem' }}>
-                  <strong>⚡ Build Tools:</strong> Vite, Webpack, npm
+                  <strong>🖼️ Frameworks:</strong> React, Node.js, Flask
                 </li>
                 <li style={{ marginBottom: '0.5rem' }}>
-                  <strong>🎨 Styling:</strong> Bootstrap, CSS Grid, Flexbox
+                  <strong>🛠️ Dev tools:</strong> Git, Docker, WSL, AWS, Google Cloud Platform, Render, VS Code, WebStorm, Jupyter Notebooks
+                </li>
+                <li style={{ marginBottom: '0.5rem' }}>
+                  <strong>📚 Libraries:</strong> pandas, NumPy, scikit-learn, Matplotlib, SQLAlchemy, MediaPipe, XState
                 </li>
               </ul>
             </div>
@@ -88,7 +102,7 @@ const Home: React.FC = () => {
                 <p className="card-text">
                   Check out my latest web applications and development projects.
                 </p>
-                <button className="btn btn-outline-primary">View Portfolio</button>
+                <button className="btn btn-outline-primary" onClick={() => navigate('/portfolio')}>View Portfolio</button>
               </div>
             </div>
           </div>
