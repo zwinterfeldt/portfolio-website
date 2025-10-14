@@ -240,22 +240,29 @@ const Portfolio: React.FC = () => {
                     fontSize: '3rem',
                     color: '#28a745'
                   }}>
-                    🚀
+                    ⏰
                   </div>
                   <div className="card-body">
-                    <h5 className="card-title">Personal Project 1</h5>
+                    <h5 className="card-title">Timesheet Automation</h5>
                     <p className="card-text">
-                      A passion project you built in your free time. What inspired you to create this? 
-                      What challenges did you overcome?
+                      At my on campus job, I worked the same hours every week and had to fill out the same online timesheet every week. 
+                      I decided instead of taking 30 minutes a week manually entering it all, I could automate the process. I used Python and Selenium to 
+                      create a script that would automatically enter my hours for me!
                     </p>
                     <div className="mb-2">
-                      <span className="badge bg-primary me-1">React</span>
-                      <span className="badge bg-secondary me-1">TypeScript</span>
-                      <span className="badge bg-success">Vite</span>
+                      <span className="badge bg-primary me-1">Python</span>
+                      <span className="badge bg-secondary me-1">Selenium</span>
                     </div>
                     <div className="d-flex gap-2">
-                      <button className="btn btn-outline-primary btn-sm">View Demo</button>
-                      <button className="btn btn-outline-secondary btn-sm">GitHub</button>
+                      <button className="btn btn-outline-primary btn-sm">...</button>
+                      <a
+                        className="btn btn-outline-secondary btn-sm"
+                        href="https://github.com/zwinterfeldt/Timesheet-Automation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -272,50 +279,18 @@ const Portfolio: React.FC = () => {
                     fontSize: '3rem',
                     color: '#28a745'
                   }}>
-                    🛠️
+                    ⚾
                   </div>
                   <div className="card-body">
-                    <h5 className="card-title">Personal Project 2</h5>
+                    <h5 className="card-title">Major League Baseball Outcome Predictor</h5>
                     <p className="card-text">
-                      Another personal creation. What problem in your daily life did this solve? 
-                      How did it help you learn new technologies?
+                      This project is a work in progress. After conducting a thorough literature review of methods used in attempting to predict the outcomes of MLB games,
+                      I have created a parser that scrapes the web for game data and cleans it for use in training machine learning models. I haven't developed the models yet, but stay tuned 😎
                     </p>
                     <div className="mb-2">
-                      <span className="badge bg-danger me-1">Python</span>
-                      <span className="badge bg-warning me-1">FastAPI</span>
-                      <span className="badge bg-info">SQLite</span>
-                    </div>
-                    <div className="d-flex gap-2">
-                      <button className="btn btn-outline-primary btn-sm">View Demo</button>
-                      <button className="btn btn-outline-secondary btn-sm">GitHub</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4 mb-4">
-                <div className="card h-100" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.1)', border: '1px solid #28a745' }}>
-                  <div style={{
-                    height: '200px',
-                    backgroundColor: '#e8f5e8',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '3rem',
-                    color: '#28a745'
-                  }}>
-                    🎯
-                  </div>
-                  <div className="card-body">
-                    <h5 className="card-title">Personal Project 3</h5>
-                    <p className="card-text">
-                      Your latest personal project. What new skills are you exploring? 
-                      What's your favorite feature that you implemented?
-                    </p>
-                    <div className="mb-2">
-                      <span className="badge bg-primary me-1">JavaScript</span>
-                      <span className="badge bg-secondary me-1">Express</span>
-                      <span className="badge bg-success">MongoDB</span>
+                      <span className="badge bg-primary me-1">Python</span>
+                      <span className="badge bg-danger me-1">BeautifulSoup</span>
+                      <span className="badge bg-warning">pandas</span>
                     </div>
                     <div className="d-flex gap-2">
                       <button className="btn btn-outline-primary btn-sm">View Demo</button>
@@ -350,18 +325,19 @@ const Portfolio: React.FC = () => {
                       🥇
                     </div>
                     <div>
-                      <h5 className="card-title mb-1">Hackathon/Competition Name</h5>
-                      <small className="text-muted">Date • Placement/Achievement</small>
+                      <h5 className="card-title mb-1">CCSC Programming Competition</h5>
+                      <small className="text-muted">September 21, 2024 • 2nd Place</small>
                     </div>
                   </div>
                   <p className="card-text">
-                    Description of the competition or hackathon. What was the challenge? 
-                    What did you build? What did you learn from the experience?
+                    This undergraduate programming competition took place at Grand Valley State University in Grand Rapids, Michigan. In 4 hours, my team of 3 was the first to finish all 5 of the questions asked. 
+                    Due to an extra submission, our time bonus could not bring us to second place. We did, however, take home the 2nd place tropy!
                   </p>
                   <div className="mb-2">
-                    <span className="badge bg-warning me-1">24 hours</span>
-                    <span className="badge bg-info me-1">Team of 4</span>
-                    <span className="badge bg-success">1st Place</span>
+                    <span className="badge bg-warning me-1">4 hours</span>
+                    <span className="badge bg-info me-1">Team of 3</span>
+                    <span className="badge bg-secondary me-1">7 Teams Total</span>
+                    <span className="badge bg-success">2nd Place</span>
                   </div>
                 </div>
               </div>
@@ -377,56 +353,28 @@ const Portfolio: React.FC = () => {
                       marginRight: '1rem',
                       color: '#dc3545'
                     }}>
-                      👥
+                      🧮
                     </div>
                     <div>
-                      <h5 className="card-title mb-1">Student Organization/Club</h5>
-                      <small className="text-muted">Role • Duration</small>
+                      <h5 className="card-title mb-1">Midwest Undergraduate Data Analytics Competition</h5>
+                      <small className="text-muted">April 6-7, 2024 • Top 10 Finish</small>
                     </div>
                   </div>
                   <p className="card-text">
-                    Your involvement in student organizations. What leadership roles have you taken? 
-                    What events or projects did you organize or contribute to?
+                    The Midwest Undergraduate Data Analytics Competition (MUDAC) is a 24-hour data analytics competition that rotates campuses throughout the Midwest. This year's challenge was working with agricultural data to 
+                    determine things like where in Minnesota to put new green fertilizer plants among other questions. My team of 4 worked diligently to make connections with the data, find our own additional data sets, plot the data, and come up 
+                    with a case for our recommendations. We ended up finishing in the top 10 out of 50 teams in the undergraduate division!
                   </p>
                   <div className="mb-2">
-                    <span className="badge bg-danger me-1">Leadership</span>
-                    <span className="badge bg-secondary me-1">Event Planning</span>
-                    <span className="badge bg-primary">Mentoring</span>
+                    <span className="badge bg-primary me-1">Data Analysis</span>
+                    <span className="badge bg-warning me-1">Power BI</span>
+                    <span className="badge bg-danger">matplotlib</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Competition/Activity 3 */}
-            <div className="col-md-6 mb-4">
-              <div className="card h-100" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.1)', border: '1px solid #6f42c1' }}>
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-3">
-                    <div style={{
-                      fontSize: '2.5rem',
-                      marginRight: '1rem',
-                      color: '#6f42c1'
-                    }}>
-                      🎓
-                    </div>
-                    <div>
-                      <h5 className="card-title mb-1">Academic Competition</h5>
-                      <small className="text-muted">Subject Area • Achievement</small>
-                    </div>
-                  </div>
-                  <p className="card-text">
-                    Academic competitions, coding contests, or research projects. 
-                    What skills did you develop? How did it challenge you?
-                  </p>
-                  <div className="mb-2">
-                    <span className="badge bg-purple me-1">Problem Solving</span>
-                    <span className="badge bg-info me-1">Algorithms</span>
-                    <span className="badge bg-success">Top 10</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            
             {/* Competition/Activity 4 */}
             <div className="col-md-6 mb-4">
               <div className="card h-100" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.1)', border: '1px solid #20c997' }}>
@@ -445,13 +393,151 @@ const Portfolio: React.FC = () => {
                     </div>
                   </div>
                   <p className="card-text">
-                    Community involvement and volunteer work. How have you used your tech skills 
-                    to help others? What causes are you passionate about?
+                    Worked with various organizations to give back to the community. Some of these organizations include:
+                    <ul>
+                      <li>Maverick Food Pantry</li>
+                        <li>ECHO Food Shelf</li>
+                        <li>Feed my Starving Children</li>
+                    </ul>
+
                   </p>
                   <div className="mb-2">
-                    <span className="badge bg-teal me-1">Community Impact</span>
-                    <span className="badge bg-info me-1">Tech for Good</span>
-                    <span className="badge bg-success">50+ Hours</span>
+                    <span className="badge bg-info me-1">Community Impact</span>
+                    <span className="badge bg-success">60+ Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
+        <div className="container">
+          <div className="text-center mb-4">
+            <h2 style={{ color: '#333', marginBottom: '1rem' }}>📄 Resume</h2>
+            <p style={{ fontSize: '1.2rem', color: '#666', maxWidth: '600px', margin: '0 auto 2rem' }}>
+              View my complete professional background, education, and technical expertise. 
+              Download for offline viewing or recruiting purposes.
+            </p>
+            <div className="d-flex justify-content-center gap-3 mb-4">
+              <a
+                className="btn btn-primary btn-lg"
+                href="/resume.pdf"
+                download
+                style={{ textDecoration: 'none', padding: '12px 30px' }}
+              >
+                📥 Download PDF
+              </a>
+              <a
+                className="btn btn-outline-primary btn-lg"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', padding: '12px 30px' }}
+              >
+                🔗 Open in New Tab
+              </a>
+            </div>
+          </div>
+
+          {/* Resume Preview */}
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div style={{ 
+                backgroundColor: '#fff', 
+                borderRadius: '12px', 
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+                overflow: 'hidden',
+                border: '1px solid #e0e0e0'
+              }}>
+                {/* Preview Header */}
+                <div style={{ 
+                  backgroundColor: '#6f42c1', 
+                  color: 'white', 
+                  padding: '1rem 1.5rem',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center'
+                }}>
+                  <div>
+                    <h5 style={{ margin: 0, fontWeight: '500' }}>Resume Preview</h5>
+                    <small style={{ opacity: 0.9 }}>Click to interact with the full document</small>
+                  </div>
+                  <div style={{ fontSize: '1.5rem' }}>📋</div>
+                </div>
+
+                {/* PDF Embed */}
+                <div style={{ 
+                  position: 'relative',
+                  width: '100%',
+                  height: '600px',
+                  backgroundColor: '#f8f9fa'
+                }}>
+                  <iframe
+                    src="/resume.pdf"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      border: 'none',
+                      borderRadius: '0 0 12px 12px'
+                    }}
+                    title="Resume Preview"
+                  />
+                  
+                  {/* Fallback for browsers that don't support PDF embedding */}
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    display: 'none', // Will show if iframe fails
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                    backgroundColor: '#f8f9fa',
+                    color: '#6c757d'
+                  }}>
+                    <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📄</div>
+                    <h4>PDF Preview Not Available</h4>
+                    <p>Your browser doesn't support PDF embedding.</p>
+                    <a
+                      className="btn btn-primary"
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      View Resume in New Tab
+                    </a>
+                  </div>
+                </div>
+
+                {/* Quick Info Footer */}
+                <div style={{ 
+                  padding: '1rem 1.5rem',
+                  backgroundColor: '#f8f9fa',
+                  borderTop: '1px solid #e0e0e0'
+                }}>
+                  <div className="row text-center">
+                    <div className="col-md-4">
+                      <small style={{ color: '#6c757d' }}>
+                        <strong>Updated:</strong> October 2025
+                      </small>
+                    </div>
+                    <div className="col-md-4">
+                      <small style={{ color: '#6c757d' }}>
+                        <strong>Format:</strong> PDF Document
+                      </small>
+                    </div>
+                    <div className="col-md-4">
+                      <small style={{ color: '#6c757d' }}>
+                        <strong>Size:</strong> ~1-2 pages
+                      </small>
+                    </div>
                   </div>
                 </div>
               </div>
