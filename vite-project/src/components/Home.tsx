@@ -80,7 +80,7 @@ const Home: React.FC = () => {
                 }}
               />
               <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#666' }}>
-                Software Engineer
+               My Headshot
               </p>
             </div>
           </div>
