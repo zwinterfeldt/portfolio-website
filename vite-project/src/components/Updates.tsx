@@ -32,8 +32,7 @@ const Updates: React.FC = () => {
         maxWidth: '500px',
         lineHeight: '1.6'
       }}>
-        This page is under construction. Check back soon for updates on my latest projects, 
-        learning journey, and development insights!
+        This page is under construction. Check back soon!
       </p>
     </div>
   );

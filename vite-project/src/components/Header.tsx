@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 
 const tabs = [
     { label: 'Home', path: '/' },
-    { label: 'Portfolio', path: '/portfolio' },
     { label: 'Updates', path: '/updates' },
-    { label: 'Contact', path: '/contact' },
 ];
 
 const Header: React.FC = () => (
