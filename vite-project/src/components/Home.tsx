@@ -89,7 +89,7 @@ const Home: React.FC = () => {
         marginBottom: 0
       }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1rem', fontWeight: 'bold' }}>
-          How can I help?
+          <i>How do I start?</i>
         </h1>
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
           Do you want to stand up for your immigrant neighbors but don't really know where to start?
