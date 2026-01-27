@@ -60,7 +60,7 @@ const Home: React.FC = () => {
       image: '/lady_liberty.jpg',
       onClick: () => window.open('https://www.aclu.org/press-releases/aclu-and-aclu-of-minnesota-demand-immediate-action-after-federal-agents-kill-another-person', '_blank'),
       extraButtons: [
-        { text: 'ICE Out of MN', onClick: () => window.open('https://www.https://www.iceoutnowmn.com/', '_blank') }
+        { text: 'ICE Out of MN', onClick: () => window.open('https://www.iceoutnowmn.com/', '_blank') }
       ]
     },
     {
