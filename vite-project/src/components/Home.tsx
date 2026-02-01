@@ -24,6 +24,7 @@ const Home: React.FC = () => {
       onClick: () => window.open('https://defend612.com/', '_blank'),
       extraButtons: [
         { text: 'Monarca (Rapid Response Tip Line and Training)', onClick: () => window.open('https://monarcamn.org/training', '_blank') },
+        { text: 'Prepare yourself by learning your rights', onClick: () => window.open('https://www.ilrc.org/community-resources/know-your-rights', '_blank') }
       ]
     },
     {
@@ -42,16 +43,22 @@ const Home: React.FC = () => {
       buttonText: 'International Institute of Minnesota',
       image: '/legal2.jpg',
       onClick: () => window.open('https://iimn.org/volunteer/', '_blank'),
+      extraButtons: [
+        { text: 'Immigration Justice Campaign', onClick: () => window.open('https://immigrationjustice.us/', '_blank') },
+      ]
     }
   ];
 
   const donateCards = [
     {
-      title: 'Immigrant Defense Project',
-      text: 'Donate to the immigrant defense project to help stand up for the rights of all immigrants.',
-      buttonText: 'Donate Now',
+      title: 'Legal Services',
+      text: 'Donate to the legal centers helping stand up for the rights of immigrants.',
+      buttonText: 'Immigrant Defense Project',
       image: '/legal.jpg',
       onClick: () => window.open('https://www.immigrantdefenseproject.org/donate/', '_blank'),
+      extraButtons: [
+        { text: 'National Immigrant Justice Center', onClick: () => window.open('https://immigrantjustice.org/', '_blank') },
+      ]
     },
     {
       title: 'Organizations that Need Your Support',
@@ -60,7 +67,8 @@ const Home: React.FC = () => {
       image: '/lady_liberty.jpg',
       onClick: () => window.open('https://www.aclu.org/press-releases/aclu-and-aclu-of-minnesota-demand-immediate-action-after-federal-agents-kill-another-person', '_blank'),
       extraButtons: [
-        { text: 'ICE Out of MN', onClick: () => window.open('https://www.iceoutnowmn.com/', '_blank') }
+        { text: 'ICE Out of MN', onClick: () => window.open('https://www.iceoutnowmn.com/', '_blank') },
+        { text: '5 Calls', onClick: () => window.open('https://5calls.org/', '_blank') }
       ]
     },
     {
@@ -70,7 +78,8 @@ const Home: React.FC = () => {
       image: '/food-drive.jpg',
       onClick: () => window.open('https://www.mettacoffee.com/', '_blank'),
       extraButtons: [
-        { text: 'Parents for Good', onClick: () => window.open('https://www.facebook.com/parentsforgood/', '_blank') }
+        { text: 'Parents for Good', onClick: () => window.open('https://www.facebook.com/parentsforgood/', '_blank') },
+        { text: 'Iglesia Cristiana La Viña', onClick: () => window.open('https://iglesiavina.org/', '_blank') }
       ]
     }
   ];
@@ -93,12 +102,14 @@ const Home: React.FC = () => {
         </h1>
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
           Do you want to stand up for your immigrant neighbors but don't really know where to start?
-          Click on the cards below to see ways you can do your part in standing up to ICE and getting them <u><i>out</i></u> of our communities!<br/><br/>
+          Look through the cards below to see ways you can do your part in standing up to ICE and getting them <u><i>out</i></u> of our communities!<br/><br/>
 
-          First, I'd like to highlight some very important organizations that have many helpful and important resources:<br/><br/>
+          If you are witnessing ICE activity currently, please call Monarca's rapid response line:<br/><br/>
+          <b style={{ fontSize: '1.5rem' }}>(612) 441-2881</b><br/><br></br>
 
-          <a href="https://mnnoice.com/index.html#overview" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>MN NOICE</a><br/>
-          <a href="https://monarcamn.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>Monarca</a>
+          If you are directly being impacted or need support, please call the COPAL navigators line or vist the Freedom For Immigrants site to get the help you need:<br/><br/>
+          <b style={{ fontSize: '1.5rem' }}>(612) 441-2881</b><br/><br/>
+          <a href="https://freedomforimmigrants.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontSize: '1.2rem', display: 'inline-block', marginTop: '0.25rem' }}>Freedom For Immigrants Website</a><br/><br/>
         </p>
         {/* Toggle and Action Button */}
         <h2 style={{ marginBottom: '1.5rem', color: '#d6d6d6' }}><b>Get Involved or Donate</b></h2>
@@ -168,10 +179,14 @@ const Home: React.FC = () => {
                     borderTopRightRadius: '0.25rem'
                   }} />
                 )}
-                <div className="card-body" style={{ color: '#fff' }}>
-                  <h5 className="card-title">{c.title}</h5>
-                  <p className="card-text">{c.text}</p>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.6rem' }}>
+                <div className="card-body" style={{ color: '#fff', padding: '1rem', display: 'flex', flexDirection: 'column' }}>
+                  {/* padded content block: gives vertical padding to title+text and enforces a consistent minHeight */}
+                  <div style={{ padding: '0.75rem 0', minHeight: '6.5rem' }}>
+                    <h5 className="card-title">{c.title}</h5>
+                    <p className="card-text">{c.text}</p>
+                  </div>
+                  {/* buttons start immediately after the padded content block so they align */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0' }}>
                     {([ { text: c.buttonText, onClick: c.onClick } ].concat(c.extraButtons || [])).map((b: any, i: number) => (
                       <button
                         key={i}
