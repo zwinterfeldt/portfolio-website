@@ -108,7 +108,7 @@ const Home: React.FC = () => {
           <b style={{ fontSize: '1.5rem' }}>(612) 441-2881</b><br/><br></br>
 
           If you are directly being impacted or need support, please call the COPAL navigators line or vist the Freedom For Immigrants site to get the help you need:<br/><br/>
-          <b style={{ fontSize: '1.5rem' }}>(612) 441-2881</b><br/><br/>
+          <b style={{ fontSize: '1.5rem' }}>(612) 255-3112</b><br/><br/>
           <a href="https://freedomforimmigrants.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', fontSize: '1.2rem', display: 'inline-block', marginTop: '0.25rem' }}>Freedom For Immigrants Website</a><br/><br/>
         </p>
         {/* Toggle and Action Button */}
